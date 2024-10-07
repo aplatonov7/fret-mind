@@ -1,0 +1,53 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td {
+  text-align: left;
+  padding: 6px 8px;
+  border: 1px solid white;
+}
+
+tr, td, input {
+  font-size: 20px;
+  font-family: monospace;
+}
+
+td.valid {
+  color: rgb(9, 119, 9);
+}
+
+td.invalid {
+  color: rgb(218, 53, 53);
+}
+
+input.valid {
+  border-color: rgb(9, 119, 9);
+}
+
+input.invalid {
+  border-color: rgb(218, 53, 53);
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.validate-btn {
+  background-color: rgb(9, 119, 9);
+}
+
+.reroll-btn {
+  background-color: rgb(218, 53, 53);
+}
