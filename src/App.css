@@ -9,9 +9,12 @@ table {
   border-collapse: collapse;
 }
 
+th, td {
+  padding: 6px 8px;
+}
+
 td {
   text-align: left;
-  padding: 6px 8px;
   border: 1px solid white;
 }
 
@@ -50,4 +53,16 @@ input.invalid {
 
 .reroll-btn {
   background-color: rgb(218, 53, 53);
+}
+
+.help {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.help p {
+  text-align: center;
+  max-width: 600px;
 }

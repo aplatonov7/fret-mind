@@ -44,9 +44,9 @@ function App() {
       <table>
         <thead>
           <tr>
-            <th></th>
+            <th>Fret #</th>
             <th>1 to 6</th>
-            <th></th>
+            <th>Fret #</th>
             <th>6 to 1</th>
           </tr>
         </thead>
@@ -68,6 +68,17 @@ function App() {
       <div className="actions">
         <button type="submit" className="validate-btn">Validate</button>
         <button type="reset" className="reroll-btn" onClick={onReroll}>Reroll the table</button>
+      </div>
+      <div className="help">
+        <p>
+          For each cell in a table - enter all the notes on the corresponding fret, 
+          either from string 1 to 6, or from string to 1 (depending on the column). 
+        </p>
+        <p>
+          You can use sharps or flats (but not double sharps/flats), upper or lowercase letters, 
+          and " ", "," or "." as a separator. I.e. "E A D G B E", "e,a,d,g,b,e", "fb.a.d.g.cb.e" are all
+          valid for fret 12, string 6 to 1.
+        </p>
       </div>
     </form>
   )
