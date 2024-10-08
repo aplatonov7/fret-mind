@@ -55,11 +55,11 @@ function App() {
             <tr key={i}>
               <td className={oneToSixStatuses[i]}>{oneToSixPerm[i]}</td>
               <td>
-                <input className={oneToSixStatuses[i]} type="text" name={`1to6-${i}`} />
+                <input className={oneToSixStatuses[i]} type="text" name={`1to6-${i}`} autoComplete="off" />
               </td>
               <td className={sixToOneStatuses[i]}>{sixToOnePerm[i]}</td>
               <td>
-                <input className={sixToOneStatuses[i]} type="text" name={`6to1-${i}`} />
+                <input className={sixToOneStatuses[i]} type="text" name={`6to1-${i}`} autoComplete="off" />
               </td>
             </tr>  
           ))}
